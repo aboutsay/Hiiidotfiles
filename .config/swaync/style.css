@@ -1,0 +1,94 @@
+/* THE MAIN BLOCK */
+.control-center {
+    background: rgba(20, 20, 20, 0.4); /* hihihiii شفافية*/
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+/* YOUR MUSIC */
+.widget-mpris {
+    background-image: url("/home/owen2/Pictures/rofi-bg.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 10px;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.widget-mpris-player {
+    padding: 5px;
+}
+
+.widget-mpris-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* شكل التنبيهات نفسها */
+.notification-row {
+    background: transparent;
+    margin: 5px 10px;
+}
+
+.notification {
+    background: rgba(45, 45, 45, 0.8);
+    border-radius: 12px;
+    margin: 5px 0px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/*CleaR*/
+.control-center-header button {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.control-center-header button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+/*mmmm*/
+.widget-volume, .widget-backlight {
+    background: rgba(45, 45, 45, 0.6);
+    padding: 15px;
+    margin: 5px 10px;
+    border-radius: 12px;
+}
+
+scale {
+    margin: 5px 0;
+}
+
+scale highlight {
+    background: #f9e2af;
+    border-radius: 5px;
+}
+
+scale contents {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    min-height: 8px;
+}
+
+/* (WiFi, nemo XD, etc) */
+.widget-buttons-grid {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 12px;
+    background: rgba(45, 45, 45, 0.4);
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: rgba(249, 226, 175, 0.2);
+}

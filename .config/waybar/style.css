@@ -1,0 +1,64 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Roboto", sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+#battery {
+    color: #ffffff; /* WHITE */
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f38ba8; /* JUST RED (Catppuccin style) */
+    color: #11111b;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*OPTIONAL (Blinking) */
+@keyframes blink {
+    to {
+        background-color: #f38ba8;
+        color: #ffffff;
+    }
+}
+window#waybar {
+    background: rgba(20, 20, 25, 0.4); /* Transparency XD + Blur */
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#workspaces {
+    background: rgba(255, 255, 255, 0.0);
+    margin: 4px;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: #7a7a7a;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#network, #pulseaudio, #clock, #tray {
+    padding: 0 12px;
+    margin: 4px 2px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+#network {
+    color: #ffffff; /* white like always (bi.tch) */
+}

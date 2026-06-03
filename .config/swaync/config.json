@@ -1,0 +1,55 @@
+{
+  "$schema": "/etc/swaync/config.schema.json",
+  "positionX": "center",
+  "positionY": "top",
+  "control-center-width": 380,
+  "notification-window-width": 300,
+  "layer": "top",
+  "cssPriority": "application",
+  "widgets": [
+    "title",
+    "buttons-grid",
+    "mpris",
+    "volume",
+    "backlight",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "BLOOD IS FUEL !!!",
+      "clear-all-button": true,
+      "button-text": "clear"
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 12
+    },
+    "volume": {
+      "label": "󰕾"
+    },
+    "backlight": {
+      "label": "󰃠",
+      "device": "intel_backlight"
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰖩",
+          "command": "~/.config/rofi.owen2/scripts/wifi_menu.sh"
+        },
+        {
+          "label": "i",
+          "command": "kitty --class nano -e nano ~/info.md"
+        },
+        {
+          "label": "󰄀",
+          "command": "hyprpicker -a"
+        },
+        {
+          "label": "󰐥",
+          "command": "wlogout"
+        }
+      ]
+    }
+  }
+}

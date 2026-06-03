@@ -1,0 +1,127 @@
+
+
+//                       NEVER EVER EVER EVER FORGET THE ","
+
+
+
+
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/notification", "backlight", "network", "battery", "pulseaudio", "tray", "custom/power"],
+
+    "battery": {
+    "states": {
+        "warning": 30,
+        "critical": 20 // change this one if u wanna
+        },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": ["", "", "", "", ""]
+    },
+
+    "custom/power": {
+    "format": " ⏻  ",
+    "tooltip": false,
+    "on-click": "wlogout --protocol layer-shell" // hmmmmmm عندك wlogout
+    //"on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu"
+    },
+
+    "hyprland/workspaces": {
+    //"disable-scroll": true,
+    "on-scroll-up": "hyprctl dispatch workspace $(($(hyprctl activeworkspace -j | jq '.id') % 10 + 1))",
+    "on-scroll-down": "hyprctl dispatch workspace $(($(hyprctl activeworkspace -j | jq '.id') <= 1 ? 10 : $(hyprctl activeworkspace -j | jq '.id') - 1))",
+    "smooth-scrolling-threshold": 5,
+    "on-click": "activate",
+    "all-outputs": true,
+    "format": "{icon}",
+    "persistent-workspaces": {
+        "*": 10
+    },
+    "format-icons": {
+        "1": "I",
+        "2": "II",
+        "3": "III",
+        "4": "IV",
+        "5": "V",
+        "6": "VI",
+        "7": "VII",
+        "8": "VIII",
+        "9": "IX",
+        "10": "X",
+        "urgent": "",
+        "default": "{icon}"
+    }
+},
+
+    "network": {
+        "format-wifi": " ",
+        "format-ethernet": "󰈀  {ifname}",
+        "format-linked": "󰈀  {ifname} (No IP)",
+        "format-disconnected": "󰖪  Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "on-click": "pkill rofi || ~/.config/rofi.owen2/scripts/wifi_menu.sh",
+        "escape": true // سحر
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": ["", "", ""],
+        "on-click": "pavucontrol"
+    },
+
+"clock": {
+        "format": "  {:%I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "<span foreground='red'><sup></sup></span>",
+            "none": "   ",
+            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-none": "   ",
+            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-none": "   ",
+            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": "   "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "backlight": {
+       //"device": "intel_backlight",
+       //"format": "{icon} {percent}%",
+       //"format-icons": ["", "", "", "", "", "", "", "", ""],
+       //"on-scroll-up": "brightnessctl set 1%+",
+       //"on-scroll-down": "brightnessctl set 1%-",
+       //"min-length": 6
+       // // 
+       "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "VAL=$(rofi -dmenu -p 'my boy' -theme-str 'window {width: 200px;}'); if [ ! -z $VAL ]; then brightnessctl set $VAL%; fi",
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "smooth-scrolling-threshold": 1
+    }
+}
