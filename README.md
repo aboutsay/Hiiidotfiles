@@ -62,16 +62,21 @@ To replicate this environment on a fresh Arch Linux system, clone this repositor
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/aboutsay/Hiiidotfile.git](https://github.com/aboutsay/Hiiidotfile.git) ~/my-dotfiles
+git clone [https://github.com/aboutsay/Hiiidotfiles.git](https://github.com/aboutsay/Hiiidotfiles.git) ~/Hiii_dotfiles
+cd Hiii_dotfiles
+chmod +x /scripts/install_S.sh
+./Scripts/install_S.sh
 
 # 2. Create target directory if it doesn't exist
 mkdir -p ~/.config
 
-# 3. Create symlinks for the components
-ln -s ~/Hiii_dotfiles/.config/hypr ~/.config/hypr
-ln -s ~/Hiii_dotfiles/.config/waybar ~/.config/waybar
-ln -s ~/Hiii_dotfiles/.config/rofi ~/.config/rofi
-ln -s ~/Hiii_dotfiles/.config/kitty ~/.config/kitty
-ln -s ~/Hiii_dotfiles/.config/swaync ~/.config/swaync
+# 3. Copy the components
+
+cp -ri ~/Hiii_dotfiles/.config/* ~/.config/
+cp -ri ~/Hiii_dotfiles/.zshrc ~/
+cp -ri ~/Hiii_dotfiles/Pictures/ ~/
+cp -ri ~/Hiii_dotfiles/Scripts/ ~/
+cp -ri ~/Hiii_dotfiles/Videos/ ~/
+cp -ri ~/Hiii_dotfiles/info.md ~/
 
 #...
