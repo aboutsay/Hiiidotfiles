@@ -11,9 +11,6 @@
 ---
 
 ## 📸 Screenshots
-> *Place your cool screenshots or repository banner here to show off the styling!*
-> 
-> *Tip: You can upload your image to GitHub and put the link below.*
 
 <div align="center">
   <img src="screenshots/2026-06-05-102850_screenshot.png" alt="Hyprland Setup Overview" width="85%">
@@ -47,11 +44,17 @@ Here are some of the essential keybindings configured in my `hyprland.conf`:
 
 *   `SUPER` + `T` ➡️ Open Terminal (**Kitty**)
 *   `SUPER` + `Q` ➡️ Kill Active Window
+*   `SUPER` + `N` ➡️ Open SwayNC (**SwayNC**)
 *   `SUPER` + `Z` ➡️ Launch Application Menu (**Rofi**)
 *   `SUPER` + `E` ➡️ Open File Manager (**Nemo**)
-*   `SUPER` + `F` ➡️➡️pen browser (**firefox**)
+*   `SUPER` + `F` ➡️ Open browser (**firefox**)
 *   `SUPER` + `SHIFT` + `M` ➡️ Exit Hyprland
 
+*   `SUPER` + `T` ➡️ Chose a live wallpaper (**mpvpaper**)
+*   `SUPER` + `Q` ➡️ Kill the live wallpaper
+*   `SUPER` + `Z` ➡️ Chose a normal wallpaper (**awww**)
+
+*   `SUPER` + `p` or `V` ➡️ Control the windows size (try it to see what I mean )
 ---
 
 ## 🚀 Installation & Deployment
@@ -70,7 +73,7 @@ chmod +x /scripts/install_S.sh
 # 2. Create target directory if it doesn't exist
 mkdir -p ~/.config
 
-# 3. Copy the components
+# 3. Copy the components safely
 
 cp -ri ~/Hiii_dotfiles/.config/* ~/.config/
 cp -ri ~/Hiii_dotfiles/.zshrc ~/
