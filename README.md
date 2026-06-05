@@ -4,8 +4,8 @@
 <div align="center">
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-blue?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
   <img src="https://img.shields.io/badge/WM-Hyprland-28a745?style=for-the-badge&logo=hyprland&logoColor=white" alt="WM">
-  <img src="https://img.shields.io/badge/Shell-Fish-red?style=for-the-badge&logo=fish&logoColor=white" alt="Shell">
-  <img src="https://img.shields.io/badge/Status-Private%20Backup-orange?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Shell-zsh-red?style=for-the-badge&logo=fish&logoColor=white" alt="Shell">
+  <img src="https://img.shields.io/badge/Status-Public%20Backup-orange?style=for-the-badge" alt="Status">
 </div>
 
 ---
@@ -50,24 +50,26 @@ Here are some of the essential keybindings configured in my `hyprland.conf`:
 *   `SUPER` + `F` ➡️ Open browser (**firefox**)
 *   `SUPER` + `SHIFT` + `M` ➡️ Exit Hyprland
 
-*   `SUPER` + `T` ➡️ Chose a live wallpaper (**mpvpaper**)
-*   `SUPER` + `Q` ➡️ Kill the live wallpaper
-*   `SUPER` + `Z` ➡️ Chose a normal wallpaper (**awww**)
+*   `SUPER` + `L` ➡️ Chose a live wallpaper (**mpvpaper**)
+*   `SUPER` + `O` ➡️ Kill the live wallpaper
+*   `SUPER` + `W` ➡️ Chose a normal wallpaper (**awww**)
 
 *   `SUPER` + `p` or `V` ➡️ Control the windows size (try it to see what I mean )
 ---
 
 ## 🚀 Installation & Deployment
 
-> ⚠️ **Note to Self:** This repository is currently customized for my laptop hardware configuration.
-
 To replicate this environment on a fresh Arch Linux system, clone this repository into your home directory and link the configuration files:
 
 ```bash
+# download this first
+sudo pacman -S hyprland waybar swaync rofi-wayland kitty fish nemo wlogout mpvpaper zsh
+
 # 1. Clone the repository
+
 git clone [https://github.com/aboutsay/Hiiidotfiles.git](https://github.com/aboutsay/Hiiidotfiles.git) ~/Hiii_dotfiles
 cd Hiii_dotfiles
-chmod +x /scripts/install_S.sh
+chmod +x ~/Hiii_dotfiles/Scripts/install_S.sh
 ./Scripts/install_S.sh
 
 # 2. Create target directory if it doesn't exist

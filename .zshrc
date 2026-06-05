@@ -16,4 +16,4 @@ alias grep='grep --color=auto'
 HISTSIZE=5000
 SAVEHIST=5000
 HISTFILE=~/.zsh_history
-export PATH=$PATH:/home/owen2/.spicetify
+export PATH=$PATH:$HOME/.spicetify
