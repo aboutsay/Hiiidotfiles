@@ -38,6 +38,10 @@
           "command": "~/.config/rofi.owen2/scripts/wifi_menu.sh"
         },
         {
+          "label": "Blur",
+          "command": "~/.config/hypr/blur/blur.sh"
+        },
+        {
           "label": "i",
           "command": "kitty --class nano -e nano ~/info.md"
         },
