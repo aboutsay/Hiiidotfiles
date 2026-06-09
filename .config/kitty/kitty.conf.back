@@ -1,0 +1,29 @@
+# الألوان الأساسية (أبيض وأسود)
+foreground            #ffffff
+background            #000000
+selection_foreground  #000000
+selection_background  #ffffff
+
+# الشفافية (0.8 تعني شفافية 80%، غيرها لـ 1.0 لو تبيها سوداء سادة)
+background_opacity 0.2
+background_blur 1
+
+# ألوان الـ Terminal (Black & White Scale)
+color0  #000000
+color8  #666666
+color1  #ffffff
+color9  #eeeeee
+color2  #ffffff
+color10 #dddddd
+color3  #ffffff
+color11 #cccccc
+color4  #ffffff
+color12 #bbbbbb
+color5  #ffffff
+color13 #aaaaaa
+color6  #ffffff
+color14 #999999
+color7  #ffffff
+color15 #ffffff
+
+confirm_os_window_close 0
