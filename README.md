@@ -1,4 +1,4 @@
-##    Hiiidotfiles
+#    Hiiidotfiles
 # 🌟 My Personal Hyprland Rice (From Scratch)
 
 <div align="center">
