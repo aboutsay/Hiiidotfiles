@@ -1,4 +1,4 @@
-#    Hiiidotfiles
+<img width="1366" height="768" alt="2026-06-09-213228_screenshot" src="https://github.com/user-attachments/assets/eb3aded5-30ef-448d-966f-160e186c3f97" />#    Hiiidotfiles
 # 🌟 My Personal Hyprland Rice (From Scratch)
 
 <div align="center">
@@ -13,8 +13,10 @@
 ## 📸 Screenshots
 
 <div align="center">
+  <img src="screenshots/2026-06-09-212313_screenshot.png" alt="Hyprland Setup Overview" width="85%">
   <img src="screenshots/2026-06-05-102850_screenshot.png" alt="Hyprland Setup Overview" width="85%">
   <img src="screenshots/2026-06-05-105026_screenshot.png" alt="sway notification center" width="85%">
+  <img src="screenshots/2026-06-09-213228_screenshot.png" alt="sway notification center" width="85%">
   <img src="screenshots/2026-06-05-103100_screenshot.png" alt="you can chose the LIVE wallpaper you want SUPER + L" width="85%">
   <img src="screenshots/2026-06-05-101654_screenshot.png" alt="a simple app launcher for you SUPER + Z" width="85%">
 </div>
