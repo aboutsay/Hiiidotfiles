@@ -79,11 +79,11 @@ mkdir -p ~/.config
 
 # 3. Copy the components safely
 
-cp -ri ~/Hiii_dotfiles/.config/* ~/.config/
-cp -ri ~/Hiii_dotfiles/.zshrc ~/
-cp -ri ~/Hiii_dotfiles/Pictures/ ~/
-cp -ri ~/Hiii_dotfiles/Scripts/ ~/
-cp -ri ~/Hiii_dotfiles/Videos/ ~/
-cp -ri ~/Hiii_dotfiles/info.md ~/
+rsync -av ~/Hiii_dotfiles/.config/ ~/.config/
+rsync -av ~/Hiii_dotfiles/Pictures/ ~/Pictures/
+rsync -av ~/Hiii_dotfiles/Scripts/ ~/Scripts/
+rsync -av ~/Hiii_dotfiles/Videos/ ~/Videos/
+rsync -av ~/Hiii_dotfiles/.zshrc ~/
+rsync -av ~/Hiii_dotfiles/info.md ~/
 
 #...
