@@ -23,7 +23,7 @@
 
 ---
 
-## 🛠️ Tech Stack & Components
+##  Tech Stack & Components
 
 Here is the complete list of tools and packages I used to build this minimal and aesthetic environment from scratch:
 
