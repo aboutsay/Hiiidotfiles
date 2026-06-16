@@ -1,5 +1,5 @@
 #    Hiiidotfiles
-# 🌟 My Personal Hyprland Rice (From Scratch)
+#  My Personal Hyprland Rice (From Scratch)
 
 <div align="center">
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-blue?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
@@ -10,7 +10,7 @@
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 <div align="center">
   <img src="screenshots/2026-06-09-212313_screenshot.png" alt="Hyprland Setup Overview" width="85%">
@@ -40,7 +40,7 @@ Here is the complete list of tools and packages I used to build this minimal and
 
 ---
 
-## ⌨️ Keybindings Quick Reference
+##  Keybindings Quick Reference
 
 Here are some of the essential keybindings configured in my `hyprland.conf`:
 
@@ -59,7 +59,7 @@ Here are some of the essential keybindings configured in my `hyprland.conf`:
 *   `SUPER` + `p` or `V` ➡️ Control the windows size (try it to see what I mean )
 ---
 
-## 🚀 Installation & Deployment
+##  Installation & Deployment
 
 To replicate this environment on a fresh Arch Linux system, clone this repository into your home directory and link the configuration files:
 
