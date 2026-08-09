@@ -13,7 +13,7 @@
     "spacing": 4,
 
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
+    "modules-center": ["clock", "custom/rofi"],
     "modules-right": ["custom/notification", "backlight", "network", "battery", "pulseaudio", "tray", "custom/power"],
 
     "battery": {
@@ -62,14 +62,16 @@
     }
 },
 
-    "network": {
+"network": {
         "format-wifi": " ",
         "format-ethernet": "󰈀  {ifname}",
         "format-linked": "󰈀  {ifname} (No IP)",
-        "format-disconnected": "󰖪  Disconnected",
+        "format-disconnected": "󰖪  fuck that!!",
+        "format-disabled": "󰖪  Off",
         "tooltip-format": "{ifname} via {gwaddr} ",
-        "on-click": "pkill rofi || networkmanager_dmenu",
-        "escape": true // سحر
+        "on-click": "rfkill toggle wifi",
+        "on-click-right": "pkill rofi || networkmanager_dmenu",
+        "escape": true
     },
 
     "pulseaudio": {
@@ -78,6 +80,11 @@
         "on-click": "pavucontrol"
     },
 
+"custom/rofi": {
+        "format": "  󰍉 ",
+        "on-click": "pkill rofi || rofi -show drun -theme gruvbox-dark",
+        "tooltip": false
+    },
 "clock": {
         "format": "  {:%I:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
