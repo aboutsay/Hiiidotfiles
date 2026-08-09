@@ -1,9 +1,11 @@
 * {
-    font-family: "JetBrainsMono Nerd Font", "Roboto", sans-serif;
+    font-family: "VictorMono Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
     font-size: 13px;
+    font-weight: bold;
     border: none;
     border-radius: 0;
 }
+
 #battery {
     color: #ffffff; /* WHITE */
 }
@@ -26,7 +28,7 @@
     }
 }
 window#waybar {
-    background: rgba(20, 20, 25, 0.4); /* Transparency XD + Blur */
+    background: rgba(20, 20, 25, 0.6); /* Transparency XD + Blur */
     color: #ffffff;
     border-radius: 10px;
 }
@@ -38,7 +40,7 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0 10px;
+    padding: 1 10px;
     color: #7a7a7a;
 }
 
