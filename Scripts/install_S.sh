@@ -59,6 +59,12 @@ PACMAN_PKGS=(
     wlsunset
     ffmpeg
     zsh
+    fish
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji 
+    noto-fonts-extra
+    ttf-victor-mono-nerd
 )
 
 AUR_PKGS=(
@@ -127,9 +133,12 @@ systemctl --user enable --now swaync 2>/dev/null && \
 
 echo ""
 #rofi stuff
-sudo $HOME/Hiii_dotfiles/Scripts/gruvbox-dark.rasi /usr/share/rofi/themes/gruvbox-dark.rasi
+sudo mkdir -p /usr/share/rofi/themes/
+sudo cp $HOME/Hiii_dotfiles/Scripts/gruvbox-dark.rasi /usr/share/rofi/themes/gruvbox-dark.rasi
 #the shell hihii
 chsh -s $(which zsh)
+#change the gtq font
+gsettings set org.gnome.desktop.interface font-name 'VictorMono Nerd Font 10'
 
 
 # ── Done ────────────────────────────────────
