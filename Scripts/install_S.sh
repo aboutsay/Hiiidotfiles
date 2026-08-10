@@ -75,6 +75,7 @@ AUR_PKGS=(
     wlogout
     awww
     swaync
+    ttf-monocraft
 )
 
 # ── Show package list ──────────────────────
