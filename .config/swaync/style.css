@@ -1,15 +1,21 @@
 /* THE MAIN BLOCK */
+* {
+    font-family: "Monocraft", "VictorMono Nerd Font", "Noto Sans CJK JP", "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+}
 .control-center {
-    background: rgba(20, 20, 20, 0.4); /* hihihiii شفافية*/
+    background: rgba(0, 0, 0, 0.42); /* hihihiii شفافية*/
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.84);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.442);
     margin: 10px;
 }
 
 /* YOUR MUSIC */
 .widget-mpris {
-    background-image: url("/home/owen2/Pictures/rofi-bg.png") !important;
     background-size: cover !important;
     background-position: center !important;
     border-radius: 10px;
@@ -18,7 +24,7 @@
 }
 
 .widget-mpris-player {
-    padding: 5px;
+    padding: 7px;
 }
 
 .widget-mpris-title {
@@ -26,18 +32,18 @@
     font-size: 1.1rem;
 }
 
-/* شكل التنبيهات نفسها */
+
 .notification-row {
     background: transparent;
     margin: 5px 10px;
 }
 
 .notification {
-    background: rgba(45, 45, 45, 0.8);
-    border-radius: 12px;
+    background: rgba(47, 25, 4, 0.315);
+    border-radius: 13px;
     margin: 5px 0px;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.046);
 }
 
 /*CleaR*/
@@ -48,12 +54,12 @@
 }
 
 .control-center-header button:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 230, 184, 0.083);
 }
 /*mmmm*/
 .widget-volume, .widget-backlight {
     background: rgba(45, 45, 45, 0.6);
-    padding: 15px;
+    padding: 2px;
     margin: 5px 10px;
     border-radius: 12px;
 }
@@ -63,7 +69,7 @@ scale {
 }
 
 scale highlight {
-    background: #f9e2af;
+    background: #ffffffe7;
     border-radius: 5px;
 }
 
@@ -78,11 +84,11 @@ scale contents {
     padding: 5px;
     margin: 10px;
     border-radius: 12px;
-    background: rgba(45, 45, 45, 0.4);
+    background: rgba(55, 52, 49, 0.431);
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 181, 112, 0.084);
     border-radius: 10px;
     padding: 15px;
     margin: 5px;
@@ -90,5 +96,5 @@ scale contents {
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-    background: rgba(249, 226, 175, 0.2);
+    background: rgba(237, 165, 8, 0.378);
 }
