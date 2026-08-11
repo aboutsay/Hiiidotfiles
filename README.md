@@ -75,7 +75,8 @@ chmod +x ~/Hiii_dotfiles/Scripts/install_S.sh
 
 # 2. Create target directory if it doesn't exist
 mkdir -p ~/.config
-mkdir -p ~/.config
+mkdir -p ~/Pictures
+mkdir -p ~/Videos
 
 # 3. Copy the components safely
 
