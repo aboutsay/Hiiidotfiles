@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
+export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+
 SOUND_PATH="/usr/share/sounds/freedesktop/stereo/complete.oga"
 
 BATTERY_PATH=$(command ls /sys/class/power_supply/ | grep -E '^BAT' | head -n 1)
@@ -18,7 +21,7 @@ fi
 if [ "$CAPACITY" -le 15 ]; then
     pw-play $SOUND_PATH &
     notify-send -u critical "           HELLO ?" "ma lord !! $CAPACITY% LEFT"
-elif [ "$CAPACITY" -eq 21 ] || [ "$CAPACITY" -eq 30 ]; then
+elif [ "$CAPACITY" -le 20 ]; then
     pw-play $SOUND_PATH &
     notify-send -u critical "       THE BATTERY :>" "ma lord !! we have $CAPACITY% LEFT! If you don't plug me in"
 fi
