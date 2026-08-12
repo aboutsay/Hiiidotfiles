@@ -63,28 +63,21 @@ Here are some of the essential keybindings configured in my `hyprland.conf`:
 To replicate this environment on a fresh Arch Linux system, clone this repository into your home directory and link the configuration files:
 
 ```bash
-# download this first
+# 1. download this first
+
+sudo pacman -Syu
 sudo pacman -S hyprland waybar swaync rofi-wayland kitty fish nemo wlogout mpvpaper zsh
 
-# 1. Clone the repository
+# 2. Clone the repository :
 
 git clone [https://github.com/aboutsay/Hiiidotfiles.git](https://github.com/aboutsay/Hiiidotfiles.git) ~/Hiii_dotfiles
+
+
+# 3. start installation :
+
 cd Hiii_dotfiles
 chmod +x ~/Hiii_dotfiles/Scripts/install_S.sh
 ./Scripts/install_S.sh
 
-# 2. Create target directory if it doesn't exist
-mkdir -p ~/.config
-mkdir -p ~/Pictures
-mkdir -p ~/Videos
-
-# 3. Copy the components safely
-
-rsync -av ~/Hiii_dotfiles/.config/ ~/.config/
-rsync -av ~/Hiii_dotfiles/Pictures/ ~/Pictures/
-rsync -av ~/Hiii_dotfiles/Scripts/ ~/Scripts/
-rsync -av ~/Hiii_dotfiles/Videos/ ~/Videos/
-rsync -av ~/Hiii_dotfiles/.zshrc ~/
-rsync -av ~/Hiii_dotfiles/info.md ~/
 
 #...
