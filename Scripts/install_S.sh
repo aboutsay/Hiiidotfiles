@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 # ============================================
 #   Hyprland Rice - Auto Install Script
 #   Arch Linux · yay required
@@ -133,13 +135,48 @@ systemctl --user enable --now swaync 2>/dev/null && \
     echo -e "  ${YELLOW}[~] swaync service not found (may need manual start)${RESET}"
 
 echo ""
-#rofi stuff
+
+#rofi stuff :
+
 sudo mkdir -p /usr/share/rofi/themes/
 sudo cp $HOME/Hiii_dotfiles/Scripts/gruvbox-dark.rasi /usr/share/rofi/themes/gruvbox-dark.rasi
-#the shell hihii
-chsh -s $(which zsh)
-#change the gtq font
-gsettings set org.gnome.desktop.interface font-name 'VictorMono Nerd Font 10'
+
+#the shell hihii :
+
+chsh -s $(which fish)
+
+#change the gtq font :
+
+gsettings set org.gnome.desktop.interface font-name 'VictorMono Nerd Font 10' 2>/dev/null || echo -e "  ${YELLOW}[~] gsettings not available, skipping${RESET}"
+
+#make nemo able to change the wallpapers :
+
+mkdir -p ~/.local/share/nemo/actions/
+touch ~/.local/share/nemo/actions/set-awww.nemo_action
+echo "[Nemo Action]
+Active=true
+Name=Set as Wallpaper (awww)
+Comment=Set selected image as wallpaper using awww
+Exec=awww img %F --transition-type wipe --transition-duration 1
+Selection=s
+Extensions=jpg;jpeg;png;gif;webp;
+Mimetypes=image/*;" > ~/.local/share/nemo/actions/set-awww.nemo_action
+
+# 2. Create target directory if it doesn't exist
+
+mkdir -p ~/.config
+mkdir -p ~/Pictures
+mkdir -p ~/Videos
+mkdir -p ~/Scripts
+
+# 3. Copy the components safely
+
+rsync -av ~/Hiii_dotfiles/.config/ ~/.config/
+rsync -av ~/Hiii_dotfiles/Pictures/ ~/Pictures/
+rsync -av ~/Hiii_dotfiles/Scripts/ ~/Scripts/
+rsync -av ~/Hiii_dotfiles/Videos/ ~/Videos/
+rsync -av ~/Hiii_dotfiles/.zshrc ~/
+rsync -av ~/Hiii_dotfiles/info.md ~/
 
 
 # ── Done ────────────────────────────────────
@@ -148,7 +185,7 @@ echo -e "  [✓] Installation complete!"
 echo -e "======================================${RESET}"
 echo ""
 echo -e "  ${YELLOW}Next steps:${RESET}"
-echo "  1. Copy your dotfiles to ~/.config/"
-echo "  2. make the wallpapers files ready : ~/Pictures/wallpapers and ~/Videos/LIVE_wallpapers"
-echo "  3. restart"
+echo "  1. restart or logout"
+echo "  2. edit any config file easly "
+echo "  3. 67 "
 echo ""
