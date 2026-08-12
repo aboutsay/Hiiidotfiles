@@ -11,10 +11,10 @@
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f38ba8; /* JUST RED (Catppuccin style) */
+    background-color: #ffbb00; /* JUST orange (Catppuccin style) */
     color: #11111b;
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 0.9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -51,7 +51,7 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #ebad10;
 }
 
 #network, #pulseaudio, #clock, #tray {
