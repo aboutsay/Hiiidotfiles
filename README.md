@@ -66,7 +66,7 @@ To replicate this environment on a fresh Arch Linux system, clone this repositor
 # 1. download this first
 
 sudo pacman -Syu
-sudo pacman -S hyprland waybar swaync rofi-wayland kitty fish nemo wlogout mpvpaper zsh
+sudo pacman -S hyprland hyprlock hypridle hyprpaper waybar swaync rofi-wayland kitty fish nemo wlogout mpvpaper zsh
 
 # 2. Clone the repository :
 
