@@ -42,8 +42,8 @@
           "command": "~/.config/hypr/blur/blur.sh"
         },
         {
-          "label": "i",
-          "command": "kitty --class nano -e nano ~/info.md"
+          "label": "?",
+          "command": "hyprctl dispatch exec '[float; size 1200 600; center] kitty --class nano -e nano ~/info.md'"
         },
         {
           "label": "󰄀",

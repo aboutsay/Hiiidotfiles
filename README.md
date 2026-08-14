@@ -1,4 +1,4 @@
-#    Hiiidotfiles
+## Hiiidotfiles
 #  My Personal Hyprland Rice (From Scratch)
 
 <div align="center">
@@ -14,10 +14,10 @@
 
 <div align="center">
   <img src="screenshots/2026-08-11-200249_screenshot.png" alt="Hyprland Setup Overview" width="85%">
-  <img src="screenshots/2026-08-11-210401_screenshot.png" alt="Hyprland Setup Overview" width="85%">
-  <img src="screenshots/2026-08-11-194901_screenshot.png" alt="sway notification center" width="85%">
-  <img src="screenshots/2026-08-11-210649_screenshot.png" alt="sway notification center" width="85%">
-  <img src="screenshots/2026-08-11-194422_screenshot.png" alt="swaync" width="85%">
+  <img src="screenshots/2026-08-14-192323_screenshot.png" alt="Hyprland Setup Overview" width="85%">
+  <img src="screenshots/2026-08-11-194901_screenshot.png" alt="rofi" width="85%">
+  <img src="screenshots/2026-08-14-190232_screenshot.png" alt="nemo gtk themed" width="85%">
+  <img src="screenshots/2026-08-14-185654_screenshot.png" alt="swaync" width="85%">
 </div>
 
 ---

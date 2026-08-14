@@ -1,17 +1,17 @@
 /* THE MAIN BLOCK */
 * {
     font-family: "Monocraft", "VictorMono Nerd Font", "Noto Sans CJK JP", "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     border: none;
-    border-radius: 0;
+    border-radius: 2;
 }
 .control-center {
     background: rgba(0, 0, 0, 0.42); /* hihihiii شفافية*/
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.84);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.442);
-    margin: 10px;
+    margin: 5px;
 }
 
 /* YOUR MUSIC */
@@ -35,13 +35,13 @@
 
 .notification-row {
     background: transparent;
-    margin: 5px 10px;
+    margin: 2px 5px;
 }
 
 .notification {
     background: rgba(47, 25, 4, 0.315);
     border-radius: 13px;
-    margin: 5px 0px;
+    margin: 2px 0px;
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.046);
 }
@@ -60,29 +60,45 @@
 .widget-volume, .widget-backlight {
     background: rgba(45, 45, 45, 0.6);
     padding: 2px;
-    margin: 5px 10px;
+    margin: 2px 5px;
     border-radius: 12px;
 }
 
 scale {
-    margin: 5px 0;
+    margin: 0px 0;
 }
 
+/*lol*/
+scale trough {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    min-height: 8px;
+}
+
+/*lol2*/
 scale highlight {
     background: #ffffffe7;
-    border-radius: 5px;
+    border-radius: 7px;
+}
+
+/*67*/
+scale slider {
+    background: #ffffff;
+    border-radius: 50%;
+    min-width: 12px;
+    min-height: 12px;
+    margin: -2px;
 }
 
 scale contents {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    min-height: 8px;
+    background: transparent;
+    border-radius: 8px;
 }
 
 /* (WiFi, nemo XD, etc) */
 .widget-buttons-grid {
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 12px;
     background: rgba(55, 52, 49, 0.431);
 }
@@ -91,10 +107,21 @@ scale contents {
     background: rgba(255, 181, 112, 0.084);
     border-radius: 10px;
     padding: 15px;
-    margin: 5px;
+    margin: 2px;
     transition: 0.3s;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
     background: rgba(237, 165, 8, 0.378);
 }
+/*
+.control-center .notification-row .notification-background label.placeholder,
+.control-center label.placeholder,
+.control-center image.placeholder {
+    display: none;
+    opacity: 0;
+}
+.placeholder {
+    display: none;
+}
+*/

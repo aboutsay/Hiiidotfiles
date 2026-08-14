@@ -52,6 +52,7 @@ echo ""
 # ── Packages ───────────────────────────────
 
 PACMAN_PKGS=(
+    glib2
     mpv
     kitty
     rofi
@@ -67,9 +68,12 @@ PACMAN_PKGS=(
     noto-fonts-emoji 
     noto-fonts-extra
     ttf-victor-mono-nerd
+    loupe
+    networkmanager-dmenu-git
 )
 
 AUR_PKGS=(
+    waypaper
     nemo
     mpvpaper
     hyprlock
@@ -78,6 +82,7 @@ AUR_PKGS=(
     awww
     swaync
     ttf-monocraft
+    papirus-folders-git
 )
 
 # ── Show package list ──────────────────────
@@ -125,6 +130,54 @@ for pkg in "${AUR_PKGS[@]}"; do
             echo -e "  ${RED}[✗] Failed to install $pkg${RESET}"
     fi
 done
+
+echo ""
+
+
+# ── Install Graphite GTK Theme ──────────────
+echo -e "${CYAN}[→] Installing Graphite GTK Theme...${RESET}"
+GRAPHITE_TMP=$(mktemp -d)
+if git clone --depth 1 https://github.com/vinceliuice/Graphite-gtk-theme.git "$GRAPHITE_TMP/Graphite-gtk-theme" &> /dev/null; then
+    pushd "$GRAPHITE_TMP/Graphite-gtk-theme" > /dev/null
+    ./install.sh --tweaks black &> /dev/null && \
+        echo -e "  ${GREEN}[✓] Graphite GTK Theme installed${RESET}" || \
+        echo -e "  ${RED}[✗] Failed to install Graphite GTK Theme${RESET}"
+    popd > /dev/null
+    rm -rf "$GRAPHITE_TMP"
+else
+    echo -e "  ${RED}[✗] Failed to clone Graphite GTK Theme repository${RESET}"
+fi
+
+# Set default GTK theme in gsettings safely
+gsettings set org.gnome.desktop.interface gtk-theme 'Graphite-Dark' 2>/dev/null || true
+
+echo ""
+
+
+# ── Install & Configure Papirus Icon Theme ──
+echo -e "${CYAN}[→] Installing Papirus Icon Theme...${RESET}"
+
+if pacman -Qq papirus-icon-theme &> /dev/null; then
+    echo -e "  ${YELLOW}[~] papirus-icon-theme already installed, skipping download${RESET}"
+else
+    echo -e "  ${CYAN}[+] Installing papirus-icon-theme via pacman...${RESET}"
+    sudo pacman -S --noconfirm --needed papirus-icon-theme &> /dev/null && \
+        echo -e "  ${GREEN}[✓] papirus-icon-theme installed${RESET}" || \
+        echo -e "  ${RED}[✗] Failed to install papirus-icon-theme${RESET}"
+fi
+
+# Apply Black color modifier to Papirus-Dark folders
+if command -v papirus-folders &> /dev/null; then
+    echo -e "  ${CYAN}[+] Setting Papirus folder color to black...${RESET}"
+    papirus-folders -C black -t Papirus-Dark &> /dev/null && \
+        echo -e "  ${GREEN}[✓] Papirus dark folders configured to black${RESET}" || \
+        echo -e "  ${YELLOW}[~] Could not apply papirus-folders customization${RESET}"
+else
+    echo -e "  ${YELLOW}[~] papirus-folders CLI tool not found, default icons will be used${RESET}"
+fi
+
+# Set default icon theme in GTK settings
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark' 2>/dev/null || true
 
 echo ""
 
