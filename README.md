@@ -1,5 +1,5 @@
-## Hiiidotfiles
-#  My Personal Hyprland Rice (From Scratch)
+# Hiiidotfiles
+#  A simple Hyprland Dotfiles (From Scratch)
 
 <div align="center">
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-blue?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
@@ -68,6 +68,7 @@ To replicate this environment on a fresh Arch Linux system, clone this repositor
 sudo pacman -Syu
 sudo pacman -S hyprland hyprlock hypridle hyprpaper waybar swaync rofi-wayland kitty fish nemo wlogout mpvpaper zsh
 
+#it prefered to download Gnome in case something happen
 # 2. Clone the repository :
 
 git clone [https://github.com/aboutsay/Hiiidotfiles.git](https://github.com/aboutsay/Hiiidotfiles.git) ~/Hiii_dotfiles

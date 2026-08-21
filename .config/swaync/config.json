@@ -38,7 +38,11 @@
           "command": "pkill rofi || networkmanager_dmenu"
         },
         {
-          "label": "Blur",
+          "label": "󰂯",
+          "command": "pkill blueman-manager || blueman-manager"
+        },
+        {
+          "label": "B",
           "command": "~/.config/hypr/blur/blur.sh"
         },
         {

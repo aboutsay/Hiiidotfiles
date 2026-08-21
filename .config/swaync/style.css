@@ -1,13 +1,13 @@
 /* THE MAIN BLOCK */
 * {
     font-family: "Monocraft", "VictorMono Nerd Font", "Noto Sans CJK JP", "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     border: none;
     border-radius: 2;
 }
 .control-center {
-    background: rgba(0, 0, 0, 0.42); /* hihihiii شفافية*/
+    background: rgba(0, 0, 0, 0.719); /* hihihiii شفافية*/
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.84);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.442);
