@@ -14,10 +14,10 @@
 
 <div align="center">
   <img src="screenshots/2026-08-11-200249_screenshot.png" alt="Hyprland Setup Overview" width="85%">
-  <img src="screenshots/2026-08-14-192323_screenshot.png" alt="Hyprland Setup Overview" width="85%">
+  <img src="screenshots/2026-08-22-175608_screenshot.png" alt="Hyprland Setup Overview" width="85%">
   <img src="screenshots/2026-08-11-194901_screenshot.png" alt="rofi" width="85%">
-  <img src="screenshots/2026-08-14-190232_screenshot.png" alt="nemo gtk themed" width="85%">
-  <img src="screenshots/2026-08-14-185654_screenshot.png" alt="swaync" width="85%">
+  <img src="screenshots/2026-08-22-180737_screenshot.png" alt="nemo gtk themed" width="85%">
+  <img src="screenshots/2026-08-22-180240_screenshot.png" alt="swaync" width="85%">
 </div>
 
 ---
