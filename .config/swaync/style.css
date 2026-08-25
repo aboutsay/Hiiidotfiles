@@ -1,14 +1,24 @@
 /* THE MAIN BLOCK */
+
+window#swaync-control-center,
+window.control-center,
+window {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
 * {
     font-family: "Monocraft", "VictorMono Nerd Font", "Noto Sans CJK JP", "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
     font-size: 15px;
     font-weight: bold;
     border: none;
-    border-radius: 2;
+    border-radius: 12px;
+    box-shadow: none;
+    text-shadow: none;
 }
 .control-center {
-    background: rgba(0, 0, 0, 0.719); /* hihihiii شفافية*/
-    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5); /* أو transparent */
+    border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.84);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.442);
     margin: 5px;
@@ -16,8 +26,8 @@
 
 /* YOUR MUSIC */
 .widget-mpris {
-    background-size: cover !important;
-    background-position: center !important;
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     min-width: 80px;
     min-height: 80px;
@@ -125,3 +135,4 @@ scale contents {
     display: none;
 }
 */
+

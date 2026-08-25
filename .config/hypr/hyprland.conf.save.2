@@ -63,15 +63,6 @@
 # source = ~/.config/hypr/myColors.conf
 
 
-
-
-#this line cost me 23 hour , and if you are reading this it will cost you more(add your time here time-wasted=23 )
-#exec-once = bash -c "gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'; sleep 2; swaync & sleep 4; gsettings set org.gnome.desktop.interface gtk-theme 'Graphite-Dark'"
-#yeah guess what, it s not working lol :>
-
-
-
-
 ################
 ### MONITORS ###
 ################
@@ -105,17 +96,10 @@ $menu = rofi
 exec-once = waybar
 exec-once = awww-daemon
 exec-once = sleep 1 && awww img ~/Pictures/wallpapers/zero.png
-#exec-once = swaync
+exec-once = swaync
 exec-once = hypridle
 exec-once = sh -c 'while true; do ~/.config/hypr/scripts/battery-warn.sh; sleep 60; done'
-#exec-once = env GTK_THEME=adw-gtk3-dark swaync
-
-#this line cost me 23 hour , and if you are reading this it will cost you more(add your time here time-wasted=23 )
-#exec-once = gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' & sleep4 & swaync & sleep 4 && gsettings set org.gnome.desktop.interface gtk-theme 'Graphite-Dark'
-
 #exec-once = mpvpaper -o "no-audio --video-sync=desync --speed=1 --vf=fps=20" '*' ~/Videos/LIVE_wallpapers/STARTUP.mp4
-
-#GTK_THEME=adw-gtk3-dark swaync &
 
 #############################
 ### ENVIRONMENT VARIABLES ###
@@ -552,18 +536,6 @@ windowrule {
     size = 1100 700
     center = true
 }
-windowrule {
-    name = telegram
-    match:class = ^(org.telegram.desktop)$
-
-    float = true
-    size = 1200 700
-    center = true
-}
-
-
-
-
 
 
 
