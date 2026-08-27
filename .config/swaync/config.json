@@ -39,7 +39,7 @@
       "actions": [
         {
           "label": "󰖩",
-          "command": "pkill rofi || networkmanager_dmenu"
+          "command": "networkmanager_dmenu"
         },
         {
           "label": "󰂯",
@@ -51,7 +51,7 @@
         },
         {
           "label": "?",
-          "command": "hyprctl dispatch exec '[float; size 1200 600; center] kitty --class nano -e nano ~/info.md'"
+          "command": "~/.config/hypr/scripts/info_S.sh"
         },
         {
           "label": "󰄀",
