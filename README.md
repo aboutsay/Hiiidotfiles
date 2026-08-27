@@ -66,12 +66,12 @@ To replicate this environment on a fresh Arch Linux system, clone this repositor
 # 1. download this first
 
 sudo pacman -Syu
-sudo pacman -S hyprland hyprlock hypridle hyprpaper waybar swaync rofi-wayland kitty fish nemo wlogout mpvpaper zsh
+sudo pacman -S hyprland kitty
 
 #it prefered to download Gnome in case something happen
 # 2. Clone the repository :
 
-git clone [https://github.com/aboutsay/Hiiidotfiles.git](https://github.com/aboutsay/Hiiidotfiles.git) ~/Hiii_dotfiles
+git clone https://github.com/aboutsay/Hiiidotfiles.git ~/Hiii_dotfiles
 
 
 # 3. start installation :

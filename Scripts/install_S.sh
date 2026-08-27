@@ -20,7 +20,7 @@ echo "  ██║  ██║██║██║██║██╔══██╗�
 echo "  ███████║██║██║██║██║  ██║██║   ██║   ██║   "
 echo "  ██╔══██║██║██║██║██║  ██║██║   ██║   ██║   "
 echo "  ██║  ██║██║██║██║██████╔╝╚██████╔╝   ██║   "
-echo "  ╚═╝  ╚═╝╚═╝╚═╝╚═╝╚═════╝  ╚═════╝   ╚═╝    by hemawari_saga"
+echo "  ╚═╝  ╚═╝╚═╝╚═╝╚═╝╚═════╝  ╚═════╝    ╚═╝    by hemawari_saga"
 echo -e "${RESET}"
 echo -e "${YELLOW}  Hyprland Rice Installer · Arch Linux${RESET}"
 echo "  ======================================"
@@ -52,13 +52,16 @@ echo ""
 # ── Packages ───────────────────────────────
 
 PACMAN_PKGS=(
+    hyprlock
+    hypridle
+    hyprpaper
     glib2
     mpv
     kitty
     rofi
+    rofi-wayland
     firefox
     grim
-    waybar
     wlsunset
     ffmpeg
     zsh
@@ -69,7 +72,14 @@ PACMAN_PKGS=(
     noto-fonts-extra
     ttf-victor-mono-nerd
     loupe
-    networkmanager-dmenu-git
+    rsync
+    hyprpicker
+    fastfetch
+    wl-clipboard
+    bandwhich
+    eza
+    starship
+    blueman
 )
 
 AUR_PKGS=(
@@ -83,6 +93,8 @@ AUR_PKGS=(
     swaync
     ttf-monocraft
     papirus-folders-git
+    waybar-git
+    networkmanager-dmenu-git
 )
 
 # ── Show package list ──────────────────────
