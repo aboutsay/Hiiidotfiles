@@ -231,6 +231,7 @@ Mimetypes=image/*;" > ~/.local/share/nemo/actions/set-awww.nemo_action
 
 mkdir -p ~/.config
 mkdir -p ~/Pictures
+mkdir -p ~/Pictures/screenshots
 mkdir -p ~/Videos
 mkdir -p ~/Scripts
 

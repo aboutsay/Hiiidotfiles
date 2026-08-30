@@ -9,7 +9,7 @@
   "control-center-width": 380,
   "notification-window-width": 300,
   "layer": "top",
-  "cssPriority": "application",
+  "cssPriority": "user",
   "widgets": [
     "title",
     "buttons-grid",

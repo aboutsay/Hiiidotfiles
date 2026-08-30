@@ -1,3 +1,17 @@
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+--        ██╗  ██╗██╗██╗██╗██████╗  ██████╗ ████████╗
+--        ██║  ██║██║██║██║██╔══██╗██╔═══██╗╚══██╔══╝
+--        ███████║██║██║██║██║  ██║██║   ██║   ██║
+--        ██╔══██║██║██║██║██║  ██║██║   ██║   ██║
+--        ██║  ██║██║██║██║██████╔╝╚██████╔╝   ██║
+--        ╚═╝  ╚═╝╚═╝╚═╝╚═╝╚═════╝  ╚═════╝    ╚═╝    by hemawari_saga (aboutsay)
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+
 -- ######################################################################################
 -- hyprland.lua — converted from hyprland.conf (Hyprland 0.55+ Lua config, hl.* API)
 -- Original hyprlang config is deprecated since 0.55; this file uses the new hl.* API.
@@ -151,6 +165,8 @@ hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
 
 hl.device({ name = "epic-mouse-v1", sensitivity = -0.5 })
 
+
+
 ------------------------------------------------------------------
 -- KEYBINDINGS
 ------------------------------------------------------------------
@@ -186,8 +202,13 @@ hl.bind(mainMod .. "+mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. "+mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 
 -- Move / resize windows with mouse
-hl.bind(mainMod .. "+mouse:272", hl.dsp.window.drag(), { drag = true })
-hl.bind(mainMod .. "+mouse:273", hl.dsp.window.resize(), { drag = true })
+--hl.bind(mainMod .. "+mouse:272", hl.dsp.window.drag(), { drag = true })
+--hl.bind(mainMod .. "+mouse:273", hl.dsp.window.resize(), { drag = true })
+-- Move/resize windows with mainMod + LMB/RMB and dragging
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+
+
 
 -- Media / brightness keys
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
@@ -230,6 +251,9 @@ hl.bind(mainMod .. "+R", function()
         hl.exec_cmd("waypaper", { float = true, size = "800 600", center = true })
     end
 end)
+
+-- FULL SCREEN MUD
+hl.bind("SUPER+G", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 
 -- WINDOW RULES
 ------------------------------------------------------------------
@@ -331,3 +355,25 @@ hl.window_rule({
     size  = "1200 700",
     center = true,
 })
+
+
+hl.window_rule({
+    name  = "STEAAAAM",
+    match = { class = "^(steam)$" },
+    float = true,
+    center = true,
+})
+
+hl.window_rule({
+    name  = "the-files-manager",
+    match = { class = "^(nemo)$" },
+    float = true,
+    center = true,
+})
+
+--hl.window_rule({
+--    name  = "OBS",
+--    match = { class = "^(com.obsproject.Studio)$" },
+--    float = true,
+--    center = true,
+--})

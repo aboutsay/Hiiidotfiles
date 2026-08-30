@@ -3,8 +3,8 @@
 window#swaync-control-center,
 window.control-center,
 window {
-    background: transparent !important;
-    background-color: transparent !important;
+    background: transparent;
+    background-color: transparent;
 }
 
 * {
@@ -17,7 +17,7 @@ window {
     text-shadow: none;
 }
 .control-center {
-    background: rgba(0, 0, 0, 0.5); /* أو transparent */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.84);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.442);
