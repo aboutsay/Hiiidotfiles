@@ -2,8 +2,8 @@
 #  A simple Hyprland Dotfiles (From Scratch)
 
 <div align="center">
-  <img src="https://img.shields.io/badge/OS-Arch%20Linux-blue?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
-  <img src="https://img.shields.io/badge/WM-Hyprland-28a745?style=for-the-badge&logo=hyprland&logoColor=white" alt="WM">
+  <img src="https://img.shields.io/badge/OS-Arch%20Linux-orange?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
+  <img src="https://img.shields.io/badge/WM-Hyprland-red?style=for-the-badge&logo=hyprland&logoColor=white" alt="WM">
   <img src="https://img.shields.io/badge/Shell-fish-red?style=for-the-badge&logo=fish&logoColor=white" alt="Shell">
   <img src="https://img.shields.io/badge/Status-Public%20Backup-orange?style=for-the-badge" alt="Status">
 </div>
@@ -12,10 +12,18 @@
 
 ##  Screenshots
 
+# waybar
+
 <div align="center">
-  <img src="screenshots/2026-08-11-200249_screenshot.png" alt="Hyprland Setup Overview" width="85%">
+  <img src="screenshots/waybar.png" alt="waybar" width="86%">
+</div>
+
+# extanded look
+
+<div align="center">
+  <img src="screenshots/2026-08-31-220854_screenshot.png" alt="Hyprland Setup Overview" width="85%">
   <img src="screenshots/2026-08-22-175608_screenshot.png" alt="Hyprland Setup Overview" width="85%">
-  <img src="screenshots/2026-08-11-194901_screenshot.png" alt="rofi" width="85%">
+  <img src="screenshots/2026-08-31-231733_screenshot.png" alt="rofi" width="85%">
   <img src="screenshots/2026-08-22-180737_screenshot.png" alt="nemo gtk themed" width="85%">
   <img src="screenshots/2026-08-22-180240_screenshot.png" alt="swaync" width="85%">
 </div>
