@@ -15,7 +15,7 @@
 # waybar
 
 <div align="center">
-  <img src="screenshots/waybar.png" alt="waybar" width="86%">
+  <img src="screenshots/waybar.png" alt="waybar" width="92%">
 </div>
 
 # extanded look
