@@ -3,8 +3,8 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-orange?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
-  <img src="https://img.shields.io/badge/WM-Hyprland-red?style=for-the-badge&logo=hyprland&logoColor=white" alt="WM">
-  <img src="https://img.shields.io/badge/Shell-fish-red?style=for-the-badge&logo=fish&logoColor=white" alt="Shell">
+  <img src="https://img.shields.io/badge/WM-Hyprland-orange?style=for-the-badge&logo=hyprland&logoColor=white" alt="WM">
+  <img src="https://img.shields.io/badge/Shell-fish-orange?style=for-the-badge&logo=fish&logoColor=white" alt="Shell">
   <img src="https://img.shields.io/badge/Status-Public%20Backup-orange?style=for-the-badge" alt="Status">
 </div>
 
