@@ -55,16 +55,16 @@ Here is the complete list of tools and packages I used to build this minimal and
 Here are some of the essential keybindings configured in my `hyprland.conf`:
 
 *   `SUPER` ➡️ Launch Application Menu (**Rofi**)
+*   `SUPER` + `escape` ➡️ Open Tthe overview (**overview**)
 *   `SUPER` + `T` ➡️ Open Terminal (**Kitty**)
 *   `SUPER` + `Q` ➡️ Kill Active Window
 *   `SUPER` + `N` ➡️ Open SwayNC (**SwayNC**)
 *   `SUPER` + `E` ➡️ Open File Manager (**Nemo**)
-*   `SUPER` + `F` ➡️ Open browser (**firefox**)
-*   `SUPER` + `SHIFT` + `M` ➡️ Exit Hyprland
+*   `SUPER` + `F` ➡️ Open browser (**zen-browser-bin**)
 
 *   `SUPER` + `L` ➡️ Chose a live wallpaper (**mpvpaper**)
 *   `SUPER` + `O` ➡️ Kill the live wallpaper
-*   `SUPER` + `W` ➡️ Chose a normal wallpaper (**awww**)
+*   `SUPER` + `W` ➡️ Candom normal wallpaper (**awww**)
 
 *   `SUPER` + `p` or `V` ➡️ Control the windows size (try it to see what I mean )
 ---
