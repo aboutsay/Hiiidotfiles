@@ -22,10 +22,12 @@
 
 <div align="center">
   <img src="screenshots/main.png" alt="Hyprland Setup Overview" width="85%">
+  <img src="screenshots/larp.png" alt="pure larp nothing to say" width="85%">
   <img src="screenshots/overview.png" alt="Yayuuu Overview" width="85%">
   <img src="screenshots/rofi.png" alt="rofi" width="85%">
   <img src="screenshots/gtk.png" alt="nemo gtk themed" width="85%">
   <img src="screenshots/swaync.png" alt="swaync" width="85%">
+  <img src="screenshots/notifications.png" alt="notifications" width="85%">
   <img src="screenshots/wlogout.png" alt="wlogout" width="85%">
 </div>
 
