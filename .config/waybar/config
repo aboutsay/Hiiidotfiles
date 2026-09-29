@@ -13,8 +13,8 @@
     "spacing": 4,
 
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock", "custom/rofi"],
-    "modules-right": ["custom/notification", "backlight", "network", "battery", "pulseaudio", "tray", "custom/power"],
+    "modules-center": ["custom/overview", "clock", "custom/rofi"],
+    "modules-right": ["custom/notification", "backlight", "battery", "pulseaudio", "power-profiles-daemon", "network", "tray", "custom/power"],
 
     "battery": {
     "states": {
@@ -29,10 +29,17 @@
     },
 
     "custom/power": {
-    "format": " ⏻  ",
+    "format": " ⏻ ",
     "tooltip": false,
-    "on-click": "wlogout --protocol layer-shell" // hmmmmmm عندك wlogout
+    "on-click": "wlogout --protocol layer-shell & pw-play ~/.config/hypr/sounds/ws4.mp3 &" // hmmmmmm wlogout
     //"on-click": "rofi -show power-menu -modi power-menu:rofi-power-menu"
+    },
+
+    
+    "custom/overview": {
+    "format": " ⊙ ",
+    "tooltip": "Toggle Hotcorner",
+    "on-click": "~/.config/waybar/toggle_hc.sh"
     },
 
     "hyprland/workspaces": {
@@ -62,6 +69,18 @@
     }
 },
 
+"power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "  ",
+    "performance": "  ",
+    "balanced": "  ",
+    "power-saver": "  "
+  }
+},
+
 "network": {
         "format-wifi": " ",
         "format-ethernet": "󰈀  {ifname}",
@@ -82,7 +101,7 @@
 
 "custom/rofi": {
         "format": "  󰍉 ",
-        "on-click": "pkill rofi || rofi -show drun -theme gruvbox-dark",
+        "on-click": "rofi -show drun -theme gruvbox-dark & pw-play ~/.config/hypr/sounds/ws2.mp3 &",
         "tooltip": false
     },
 "clock": {
@@ -97,13 +116,13 @@
         "tooltip": false,
         "format": "{icon}",
         "format-icons": {
-            "notification": "<span foreground='red'><sup></sup></span>",
+            "notification": "  <span foreground='red'><sup></sup></span>",
             "none": "   ",
-            "dnd-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-notification": "  <span foreground='red'><sup></sup></span>",
             "dnd-none": "   ",
-            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "inhibited-notification": "  <span foreground='red'><sup></sup></span>",
             "inhibited-none": "   ",
-            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-notification": "  <span foreground='red'><sup></sup></span>",
             "dnd-inhibited-none": "   "
         },
         "return-type": "json",

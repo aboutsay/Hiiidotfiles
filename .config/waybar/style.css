@@ -54,7 +54,7 @@ window#waybar {
     background-color: #ebad10;
 }
 
-#network, #pulseaudio, #clock, #tray {
+#network, #pulseaudio, #tray {
     padding: 0 12px;
     margin: 4px 2px;
     background: rgba(255, 255, 255, 0.1);
@@ -63,4 +63,45 @@ window#waybar {
 
 #network {
     color: #ffffff; /* white like always (bi.tch) */
+}
+
+#power-profiles-daemon {
+    padding: 0 12px;
+    margin: 4px 2px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+#custom-power {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin: 3px 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+#custom-power:hover {
+    background-color: #ffffff;
+    color: #1e1e2e;
+    border-color: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+#clock {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 0px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin: 3px 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+#clock:hover {
+    background-color: #ffffff;
+    color: #1e1e2e;
+    border-color: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }

@@ -55,15 +55,8 @@ hl.exec_cmd("nm-applet --indicator")
 hl.exec_cmd("~/.config/hypr/scripts/hotcorner.sh &")
 end)
 
--- this next line is from Yayuuu and yeah it feels gay
-hl.on("hyprland.start", function()
-    hl.exec_cmd("hyprpm reload")
-end)
 
--- for build from source uses 
--- hl.plugin.load("~/hyprland-scroll-overview/scrolloverview.so")
--- hl.exec_cmd("hyprctl plugin load '~/hyprland-scroll-overview/scrolloverview.so'") 
-
+hl.plugin.load("/home/owen2/hyprland-scroll-overview/scrolloverview.so")
 
 
 ------------------------------------------------------------------

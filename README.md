@@ -1,5 +1,5 @@
 # Hiiidotfiles
-#  A simple Hyprland Dotfiles (From Scratch)
+##  A simple Hyprland Dotfiles (From Scratch + No quick shell)
 
 <div align="center">
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-orange?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
@@ -18,14 +18,15 @@
   <img src="screenshots/waybar.png" alt="waybar" width="92%">
 </div>
 
-# extanded look
+# extended look
 
 <div align="center">
-  <img src="screenshots/2026-08-31-220854_screenshot.png" alt="Hyprland Setup Overview" width="85%">
-  <img src="screenshots/2026-08-22-175608_screenshot.png" alt="Hyprland Setup Overview" width="85%">
-  <img src="screenshots/2026-08-31-231733_screenshot.png" alt="rofi" width="85%">
-  <img src="screenshots/2026-08-22-180737_screenshot.png" alt="nemo gtk themed" width="85%">
-  <img src="screenshots/2026-08-22-180240_screenshot.png" alt="swaync" width="85%">
+  <img src="screenshots/main.png" alt="Hyprland Setup Overview" width="85%">
+  <img src="screenshots/overview.png" alt="Yayuuu Overview" width="85%">
+  <img src="screenshots/rofi.png" alt="rofi" width="85%">
+  <img src="screenshots/gtk.png" alt="nemo gtk themed" width="85%">
+  <img src="screenshots/swaync.png" alt="swaync" width="85%">
+  <img src="screenshots/wlogout.png" alt="wlogout" width="85%">
 </div>
 
 ---

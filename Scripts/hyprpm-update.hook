@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = hyprland
+
+[Action]
+Description = Rebuilding hyprpm plugins against new Hyprland...
+When = PostTransaction
+Exec = /usr/bin/bash -c 'su - $(who | awk "NR==1{print \$1}") -c "hyprpm update"'

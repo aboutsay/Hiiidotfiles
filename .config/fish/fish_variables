@@ -1,4 +1,4 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/home/owen2/\x2espicetify
+SETUVAR --export fish_user_paths:/home/owen2/\x2ecargo/bin\x1e/home/owen2/\x2espicetify

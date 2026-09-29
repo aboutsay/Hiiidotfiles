@@ -59,6 +59,7 @@ PACMAN_PKGS=(
     mpv
     kitty
     rofi
+    rofi-wayland
     firefox
     grim
     wlsunset
@@ -86,6 +87,7 @@ AUR_PKGS=(
     waypaper
     nemo
     mpvpaper
+    hyprlock
     dolphin
     wlogout
     awww
@@ -244,7 +246,7 @@ rsync -av ~/Hiii_dotfiles/Scripts/ ~/Scripts/
 rsync -av ~/Hiii_dotfiles/Videos/ ~/Videos/
 rsync -av ~/Hiii_dotfiles/.zshrc ~/
 rsync -av ~/Hiii_dotfiles/info.md ~/
-#rsync -av ~/Hiii_dotfiles/hyprland-scroll-overview ~/
+rsync -av ~/Hiii_dotfiles/hyprland-scroll-overview ~/
 
 ##### adding the overview plugin from Yayuuu
 
@@ -252,18 +254,19 @@ hyprpm add https://github.com/yayuuu/hyprland-scroll-overview.git
 hyprpm update
 hyprpm enable scrolloverview
 
-#sudo mkdir -p /etc/pacman.d/hooks
-#rsync -av ~/Hiii_dotfiles/Scripts/hyprpm-update.hook /etc/pacman.d/hooks/
+sudo mkdir -p /etc/pacman.d/hooks
+rsync -av ~/Hiii_dotfiles/Scripts/hyprpm-update.hook /etc/pacman.d/hooks/
 
+########## mamamia , maded with love 
 
 # ── Done ────────────────────────────────────
 echo -e "${GREEN}======================================"
-echo -e "  [✓] Installation complete!"
+echo -e "  [✓] Installation complete yayyy"
 echo -e "======================================${RESET}"
 echo ""
 echo -e "  ${YELLOW}Next steps:${RESET}"
 echo "  1. restart or logout"
-echo "  2. edit any config file easly "
+echo "  2. edit any config file easly if u wanted , and report the errors on my github to help u"
 echo "  3. 67 "
 echo ""
 

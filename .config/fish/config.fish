@@ -11,9 +11,10 @@ if status is-interactive
     alias clear "printf '\033[2J\033[3J\033[1;1H'"
     alias celar "printf '\033[2J\033[3J\033[1;1H'"
     alias claer "printf '\033[2J\033[3J\033[1;1H'"
-    alias ls 'eza --icons'
+    #alias ls 'eza --icons'
     alias pamcan pacman
     alias q 'qs -c ii'
+    alias ls "eza --icons=auto"
 
     # Init Starship prompt (Must be at the end of interactive block)
     starship init fish | source
