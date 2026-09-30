@@ -1,5 +1,5 @@
 # Hiiidotfiles
-##  A simple Hyprland Dotfiles (From Scratch + No quick shell)
+##  A simple Hyprland x Niri Dotfiles (From Scratch + No quick shell)
 
 <div align="center">
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-orange?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
@@ -12,13 +12,13 @@
 
 ##  Screenshots
 
-# waybar
+## waybar
 
 <div align="center">
   <img src="screenshots/waybar.png" alt="waybar" width="92%">
 </div>
 
-# extended look
+## extended look
 
 <div align="center">
   <img src="screenshots/main.png" alt="Hyprland Setup Overview" width="85%">
@@ -26,25 +26,17 @@
   <img src="screenshots/rofi.png" alt="rofi" width="85%">
   <img src="screenshots/gtk.png" alt="nemo gtk themed" width="85%">
   <img src="screenshots/swaync.png" alt="swaync" width="85%">
-  <img src="screenshots/notifications.png" alt="notifications" width="85%">
 </div>
 
 ---
+## New Niri config Besides of Hyprland 
 
-##  Tech Stack & Components
+now you can try both hyprland and niri on the same user , using the same tools config . just make sure that you have GDM or any log in menu that u can change between the WMs you want :
 
-Here is the complete list of tools and packages I used to build this minimal and aesthetic environment from scratch:
+<div align="center">
+  <img src="screenshots/niri.png" alt="from Niri" width="92%">
+</div>
 
-| Component | Software Used | Description |
-| :--- | :--- | :--- |
-| **Window Manager** | [Hyprland](https://hyprland.org/) | Dynamic tiling Wayland compositor |
-| **Status Bar** | [Waybar](https://github.com/Alexays/Waybar) | Highly customizable Wayland bar |
-| **Notification Center** | [SwayNC](https://github.com/ErikReider/SwayNotificationCenter) | Wayland notification daemon |
-| **Application Launcher** | [Rofi (Wayland)](https://github.com/lbonn/rofi) | App launcher & dmenu replacement |
-| **Terminal Emulator** | [Kitty](https://sw.kovidgoyal.net/kitty/) | Fast, feature-rich, GPU-based terminal |
-| **Shell** | [Fish](https://fishshell.com/) | User-friendly and interactive command line |
-| **File Manager** | [Nemo](https://github.com/linuxmint/nemo) | Clean and fast desktop file manager |
-| **Session Manager** | [Wlogout](https://github.com/ArtsyMacaw/wlogout) | Wayland logout menu |
 
 ---
 
@@ -52,7 +44,7 @@ Here is the complete list of tools and packages I used to build this minimal and
 
 Here are some of the essential keybindings configured in my `hyprland.conf`:
 
-*   `SUPER` ➡️ Launch Application Menu (**Rofi**)
+*   `SUPER` ➡️ Launch Application Menu (**Rofi**) (`SUPER` + `z` for Niri) 
 *   `SUPER` + `escape` ➡️ Open Tthe overview (**overview**)
 *   `SUPER` + `T` ➡️ Open Terminal (**Kitty**)
 *   `SUPER` + `Q` ➡️ Kill Active Window
@@ -62,7 +54,7 @@ Here are some of the essential keybindings configured in my `hyprland.conf`:
 
 *   `SUPER` + `L` ➡️ Chose a live wallpaper (**mpvpaper**)
 *   `SUPER` + `O` ➡️ Kill the live wallpaper
-*   `SUPER` + `W` ➡️ Candom normal wallpaper (**awww**)
+*   `SUPER` + `W` ➡️ Random normal wallpaper (**awww**)
 
 *   `SUPER` + `p` or `V` ➡️ Control the windows size (try it to see what I mean )
 ---
