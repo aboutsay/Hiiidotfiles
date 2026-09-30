@@ -80,6 +80,8 @@ PACMAN_PKGS=(
     starship
     blueman
     hyprpm
+    niri
+    xwayland-satellite
 )
 
 AUR_PKGS=(
@@ -263,7 +265,7 @@ echo -e "======================================${RESET}"
 echo ""
 echo -e "  ${YELLOW}Next steps:${RESET}"
 echo "  1. restart or logout"
-echo "  2. edit any config file easly "
+echo "  2. you can now try both niri and hyprland on the same user (switch between them on the log in menu). edit any config file easly "
 echo "  3. 67 "
 echo ""
 
