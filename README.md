@@ -3,7 +3,6 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/OS-Arch%20Linux-orange?style=for-the-badge&logo=arch-linux&logoColor=white" alt="OS">
-  <img src="https://img.shields.io/badge/WM-Hyprland-orange?style=for-the-badge&logo=hyprland&logoColor=white" alt="WM">
   <img src="https://img.shields.io/badge/Shell-fish-orange?style=for-the-badge&logo=fish&logoColor=white" alt="Shell">
   <img src="https://img.shields.io/badge/Status-Public%20Backup-orange?style=for-the-badge" alt="Status">
 </div>
@@ -42,7 +41,7 @@ now you can try both hyprland and niri on the same user , using the same tools c
 
 ##  Keybindings Quick Reference
 
-Here are some of the essential keybindings configured in my `hyprland.conf`:
+Here are some of the essential keybindings configured in my `hyprland.lua` or niri cofig file:
 
 *   `SUPER` ➡️ Launch Application Menu (**Rofi**) (`SUPER` + `z` for Niri) 
 *   `SUPER` + `escape` ➡️ Open Tthe overview (**overview**)

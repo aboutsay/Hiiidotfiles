@@ -30,13 +30,12 @@ hl.monitor({
 -- hl.monitor({ output = "", mode = "preferred", position = "auto", scale = 1.5 })
 
 ------------------------------------------------------------------
--- PROGRAMS (kept as Lua locals, replacing $terminal / $fileManager / $menu)
+-- LOCALS YOU KNOW (kept as Lua locals, replacing $terminal / $fileManager / $menu)
 ------------------------------------------------------------------
 local terminal    = "kitty"
 local fileManager  = "nemo" -- or dolphin if you're a nerd
-local menu         = "rofi"
 local mainMod      = "SUPER"
-
+--local animations_enabled = false
 ------------------------------------------------------------------
                -- AUTOSTART (exec-once -> hl.exec_cmd, runs once when the script loads)
 
@@ -79,6 +78,10 @@ hl.config({ ecosystem = { enforce_permissions = true } })
 hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
 hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
 hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
+hl.permission({ binary = "/usr/bin/hyprlock", type = "screencopy", mode = "allow" })
+
+
+
 
 ------------------------------------------------------------------
 -- LOOK AND FEEL
@@ -113,8 +116,8 @@ hl.config({
         },
         blur = {
             enabled            = false,
-            size               = 2,
-            passes             = 3,
+            size               = 1,
+            passes             = 2,
             vibrancy           = 0.2,
             new_optimizations  = true,
             ignore_opacity     = true,
@@ -146,6 +149,7 @@ hl.config({
             natural_scroll = false,
         },
     },
+    -- animations = { enabled = animations_enabled },
 })
 
 ------------------------------------------------------------------
@@ -405,4 +409,5 @@ hl.window_rule({
 --    center = true,
 --})
 
-
+-- a config that when u open a havy game it does not shows you a deadass notification
+hl.config({ misc = { enable_anr_dialog = false } })

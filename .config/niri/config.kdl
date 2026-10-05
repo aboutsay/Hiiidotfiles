@@ -498,12 +498,3 @@ binds {
 
 
 
-window-rule {
-    match app-id=r"^steam$" title=r"^$"
-    open-floating true
-}
-
-window-rule {
-    match app-id=r"^steam$" title=r"^Steam$"
-    open-floating true
-}
